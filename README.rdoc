@@ -1,28 +1,3 @@
-== README
+== Under Construction
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+I am still working on this project so there is stuff that doesn't work, has bugs or just doesn't exist. Once everything is set and this project becomes ready to use I will update this README file with the instructions and add the documentation.
