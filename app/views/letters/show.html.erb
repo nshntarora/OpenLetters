@@ -7,3 +7,7 @@
  <p class="body">
   <%= @letter.body %>
 </p>
+<p>
+<%= link_to 'Edit', edit_letter_path(@letter) %> |
+      <%= link_to 'Delete', letter_path(@letter), method: :delete, data: { confirm: 'Are you sure?' } %>
+  </p>

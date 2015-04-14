@@ -16,6 +16,25 @@ class LettersController < ApplicationController
     render 'new'
   end
 	end
+	def edit
+    @letter = Letter.find(params[:id])
+  end
+ 
+  def update
+    @letter = Letter.find(params[:id])
+ 
+    if @letter.update(params[:post].permit(:title, :body))
+      redirect_to @letter
+    else
+      render 'edit'
+    end
+  end
+  def destroy
+    @letter = Letter.find(params[:id])
+    @letter.destroy
+ 
+    redirect_to letters_path
+  end
  
   private
  
