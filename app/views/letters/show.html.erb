@@ -1,0 +1,9 @@
+<h1 class="title">
+  <%= @letter.title %>
+</h1>
+<p class="date">
+  Submitted <%= time_ago_in_words(@letter.created_at) %> Ago
+</p>
+ <p class="body">
+  <%= @letter.body %>
+</p>
