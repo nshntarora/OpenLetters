@@ -3,16 +3,19 @@ class LettersController < ApplicationController
     @letters = Letter.all.order('created_at DESC')
 	end
 	def new
+		@letter = Letter.new
 	end
 	def show
     @letter = Letter.find(params[:id])
   end
 	def create
     @letter = Letter.new(letter_params)
- 
-    @letter.save
+    if @letter.save
     redirect_to @letter
+  	else
+    render 'new'
   end
+	end
  
   private
  

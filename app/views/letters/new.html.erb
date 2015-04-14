@@ -1,6 +1,16 @@
 <h1>Write a letter</h1>
  
 <%= form_for :letter, url: letters_path do |f| %>
+<% if @letter.errors.any? %>
+      <div id="errors">
+        <h2><%= pluralize(@letter.errors.count, "error") %> prevented this letter from saving:</h2>
+        <ul>
+          <% @letter.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
   <%= f.label :title %><br>
   <%= f.text_field :title %><br>
   <br>
