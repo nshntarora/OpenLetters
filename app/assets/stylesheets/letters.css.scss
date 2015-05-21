@@ -1,3 +1,54 @@
+
 // Place all the styles related to the letters controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+	font-family: "Open Sans", sans-serif;
+}
+.logo img {
+	width: 30%;
+	margin: 5% 0 5% 0;
+}
+.content-wrapper {
+	margin: 0px auto;
+	width: 50%;
+a {
+	text-decoration: none;
+	color: #000;
+}
+}
+.title {
+	font-size: 100%;
+}
+.date {
+	font-size: 70%;
+}
+
+.letter-wrapper {
+	.title{
+		font-size: 250%;
+	}
+}
+.letter-footer {
+	a{
+		color: #fff;
+	}
+	a:hover{
+		color: #000;
+	}
+}
+.button{
+	border: 1px solid #000;
+	padding: 1% 1em;
+	text-align: center;
+	background-color: #000;
+	margin-bottom: 1%;
+}
+.button:hover{
+	background-color: #fff;
+	color: #000;
+	a{
+		color: #000;
+	}
+}

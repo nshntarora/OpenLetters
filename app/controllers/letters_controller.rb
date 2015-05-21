@@ -23,7 +23,7 @@ class LettersController < ApplicationController
   def update
     @letter = Letter.find(params[:id])
  
-    if @letter.update(params[:post].permit(:title, :body))
+    if @letter.update(params[:letter].permit(:title, :body, :author))
       redirect_to @letter
     else
       render 'edit'

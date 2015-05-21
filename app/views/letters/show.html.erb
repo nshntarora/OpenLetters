@@ -1,13 +1,17 @@
+<div class="letter-wrapper">
 <h1 class="title">
   <%= @letter.title %>
 </h1>
 <p class="date">
-  Submitted <%= time_ago_in_words(@letter.created_at) %> Ago
+  <i>Submitted <%= time_ago_in_words(@letter.created_at) %> ago</i>
 </p>
  <p class="body">
   <%= @letter.body %>
 </p>
-	<p>
-	<%= link_to 'Edit', edit_letter_path(@letter) %> |
-      <%= link_to 'Delete', letter_path(@letter), method: :delete, data: { confirm: 'Are you sure?' } %>
-  </p>
+<div class="letter-footer">
+<div class="button">
+	<%= link_to 'Edit', edit_letter_path(@letter) %></div><div class="button">
+  <%= link_to 'Delete', letter_path(@letter), method: :delete, data: { confirm: 'Are you sure?' } %>
+</div>
+</div>
+</div>

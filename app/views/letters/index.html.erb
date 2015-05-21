@@ -1,6 +1,4 @@
 <% @letters.each do |letter| %>
-  <div class="letter_wrapper">
   	<h2 class="title"><%= link_to letter.title, letter %></h2>
-    <p class="date"><%= time_ago_in_words(letter.created_at) %></p>
-  </div>
+    <p class="date"><i><%= time_ago_in_words(letter.created_at) %> ago</i></p>
 <% end %>
