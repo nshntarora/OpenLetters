@@ -8,10 +8,4 @@
  <p class="body">
   <%= @letter.body %>
 </p>
-<div class="letter-footer">
-<div class="button">
-	<%= link_to 'Edit', edit_letter_path(@letter) %></div><div class="button">
-  <%= link_to 'Delete', letter_path(@letter), method: :delete, data: { confirm: 'Are you sure?' } %>
-</div>
-</div>
 </div>

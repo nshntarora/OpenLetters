@@ -19,23 +19,13 @@ a {
 }
 }
 .title {
-	font-size: 100%;
 }
 .date {
-	font-size: 70%;
 }
 
 .letter-wrapper {
 	.title{
 		font-size: 250%;
-	}
-}
-.letter-footer {
-	a{
-		color: #fff;
-	}
-	a:hover{
-		color: #000;
 	}
 }
 .button{
@@ -51,4 +41,36 @@ a {
 	a{
 		color: #000;
 	}
+}
+
+.submit-button input {
+  border: 0px;
+  color: #fff;
+  background-color: #000;
+  line-height: 3em;
+padding: 0px 1em;
+}
+
+.letter-title {
+  width: 100%;
+  height: 3em;
+  padding: 5px;
+}
+.letter-body {
+  padding: 0px;
+  overflow: auto;
+}
+.letter-body {
+  width: 100%;
+  height: 10em;
+}
+.letter-author {
+  width: 100%;
+}
+
+label {
+	font-size: 150%;
+}
+h1 {
+	font-size: 400%;
 }
