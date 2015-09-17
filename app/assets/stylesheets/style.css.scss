@@ -11,6 +11,7 @@ body
 {
 	background-color: #ffffff;
 	border: 1px solid #c0c0c0;
+	margin-bottom: 3%;
 }
 .letter-block
 {
@@ -25,5 +26,21 @@ body
 }
 hr
 {
-	color: #cfcfcf;
+	color: #757575;
+	margin-bottom: 0px;
+}
+.letter-wrapper
+{
+	.title
+	{
+		padding: 3% 10% 0%;
+	}
+	.date
+	{
+		padding: 0% 10% 3%;
+	}
+	.body
+	{
+		padding: 0% 10% 3%;
+	}
 }
