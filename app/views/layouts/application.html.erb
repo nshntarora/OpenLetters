@@ -8,15 +8,21 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+  <!-- Materialize Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <%= csrf_meta_tags %>
 </head>
-<body>
-	<div class="logo">
-		<center>
-	<%= link_to image_tag("logo.png"), root_path %>
-	</center>
-</div>
-	<div class="content-wrapper">
+<body class="#00c853 green accent-4">
+  <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+    <%= link_to(content_tag(:i, "add", class: "large material-icons"), new_letter_path, class: "btn-floating btn-large green darken-4")%>
+  </div>
+  <div class="site-header">
+	<h1 class="header center white-text">Open Letters</h1>
+<div class="row center">
+        <h5 class="header col s12 light white-text">with great power comes great responsibility.</h5>
+      </div>
+      </div>
+	<div class="container">
 <%= yield %>
 </div>
 </body>
