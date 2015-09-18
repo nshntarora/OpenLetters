@@ -1,4 +1,5 @@
 class LettersController < ApplicationController
+  http_basic_authenticate_with name: "acmecorp", password: "thisisakey"
 	def index
     @letters = Letter.all.order('created_at DESC').page params[:page]
 	end
@@ -16,26 +17,7 @@ class LettersController < ApplicationController
     render 'new'
   end
 	end
-	def edit
-    @letter = Letter.find(params[:id])
-  end
- 
-  def update
-    @letter = Letter.find(params[:id])
- 
-    if @letter.update(params[:letter].permit(:title, :body, :author))
-      redirect_to @letter
-    else
-      render 'edit'
-    end
-  end
-  def destroy
-    @letter = Letter.find(params[:id])
-    @letter.destroy
- 
-    redirect_to letters_path
-  end
- 
+
   private
  
   def letter_params
