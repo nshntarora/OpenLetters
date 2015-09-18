@@ -47,6 +47,9 @@ GEM
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.8.2)
+    kaminari (0.16.3)
+      actionpack (>= 3.0.0)
+      activesupport (>= 3.0.0)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
     materialize-sass (0.95.2)
@@ -117,6 +120,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   jbuilder (~> 2.0)
   jquery-rails
+  kaminari
   materialize-sass
   rails (= 4.1.8)
   sass-rails (~> 4.0.3)
