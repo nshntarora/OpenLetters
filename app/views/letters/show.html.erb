@@ -3,7 +3,7 @@
   <%= @letter.title %>
 </h1>
 <p class="date">
-  <i>Submitted <%= time_ago_in_words(@letter.created_at) %> ago</i>
+  <b>Addressed to <%= @letter.addressed_to %></b> | <i>Submitted <%= time_ago_in_words(@letter.created_at) %> ago</i>
 </p>
  <p class="body">
   <%= @letter.body %>

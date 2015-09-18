@@ -1,7 +1,7 @@
 <% @letters.each do |letter| %>
   <%= link_to letter, :class => 'letter-block' do %>
     <h5 class="index-title grey-text text-darken-1"><%= letter.title %></h5>
-    <p class="date"><i class="grey-text text-darken-2"><%= time_ago_in_words(letter.created_at) %> ago</i></p>
+    <p class="date grey-text text-darken-2">Addressed to <%= letter.addressed_to %> | <i>Published <%= time_ago_in_words(letter.created_at) %> ago</i></p>
     <hr>
 <% end %>
 <% end %>

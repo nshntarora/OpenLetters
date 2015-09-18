@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  resources :letters do
-    resources :comments
-  end
+  resources :letters
   root "letters#index"
 end
