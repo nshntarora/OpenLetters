@@ -1,4 +1,4 @@
-<div class="form-inputs"><%= form_for @letter do |f| %>
+<div class="form-inputs"><%= simple_form_for @letter do |f| %>
   <% if @letter.errors.any? %>
     <div id="errors">
       <h2><%= pluralize(@letter.errors.count, "error") %> prevented this letter from saving:</h2>
@@ -9,19 +9,10 @@
       </ul>
     </div>
   <% end %>
-  
-  <%= f.label :title %><br>
-  <br>
-  <%= f.text_field :title, :class => "letter-title" %><br>
-  <br>
-  <%= f.label :body %><br><br>
-  <%= f.text_field :body, :class => "textarea" %><br>
-  <br>
-  <%= f.label :author %><br><br>
-  <%= f.text_field :author, :class => "letter-author" %><br>
-  <br>
-<div class="submit-button">
-  <%= f.submit %>
-</div>
+  <%= f.input :title, placeholder: "Letter Title" %>
+  <%= f.input :body, placeholder: "Letter Body"%>
+<center>
+  <%= f.submit "Submit", class: "btn-large" %>
+</center>
 <% end %>
 </div>

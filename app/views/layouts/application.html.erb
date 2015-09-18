@@ -4,17 +4,13 @@
   <title>Openletters</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
   <!-- Materialize Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <%= csrf_meta_tags %>
 </head>
-<body class="#00c853 green accent-4">
+<body class="#26a69a teal lighten-1">
   <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-    <%= link_to(content_tag(:i, "add", class: "large material-icons"), new_letter_path, class: "btn-floating btn-large green darken-4")%>
+    <%= link_to(content_tag(:i, "add", class: "large material-icons"), new_letter_path, class: "btn-floating btn-large teal darken-4")%>
   </div>
   <div class="site-header">
   <%= link_to(content_tag(:h1, "Open Letters", class: "header center white-text"), root_path )%>

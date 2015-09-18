@@ -1,11 +1,16 @@
+@import url('http://fonts.googleapis.com/css?family=Roboto');
+html
+{
+	font-family: "Roboto",sans-serif;
+}
 body
 {
 	color: #757575;
 }
 .site-header
 {
-	margin-top: 90px;
-	margin-bottom: 40px;
+	margin-top: 5%;
+	margin-bottom: 5%;
 }
 .container
 {
@@ -26,8 +31,8 @@ body
 }
 hr
 {
-	color: #757575;
 	margin-bottom: 0px;
+	border: 1px solid #C0C0C0;
 }
 .letter-wrapper
 {
@@ -43,4 +48,43 @@ hr
 	{
 		padding: 0% 10% 3%;
 	}
+}
+.form-inputs {
+	width: 70%;
+	margin: 0px auto;
+	margin-bottom: 3%;
+}
+.form-inputs abbr{
+	display: none;
+}
+textarea
+{
+	background-color: transparent;
+	border-width: medium medium 1px;
+	border-style: none none solid;
+	border-color: -moz-use-text-color -moz-use-text-color #9E9E9E;
+	-moz-border-top-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	border-image: none;
+	border-radius: 0px;
+	outline: medium none;
+	height: 15rem;
+	width: 100%;
+	font-size: 1rem;
+	margin: 0px 0px 15px;
+	padding: 0px;
+	box-shadow: none;
+	box-sizing: content-box;
+	transition: all 0.3s ease 0s;
+}
+textarea:focus
+{
+	border-bottom: 1px solid #26A69A;
+box-shadow: 0px 1px 0px 0px #26A69A;
+}
+.new-letter
+{
+	padding: 3%;
 }
