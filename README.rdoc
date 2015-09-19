@@ -1,3 +1,0 @@
-== Under Construction
-
-I am still working on this project so there is stuff that doesn't work, has bugs or just doesn't exist. Once everything is set and this project becomes ready to use I will update this README file with the instructions and add the documentation.
