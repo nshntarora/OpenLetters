@@ -3,7 +3,7 @@
 
 ```
 Give a man a mask and he will tell you the truth.
-                                     - Oscal Wilde
+                                     - Oscar Wilde
 ```
 
 
